@@ -1,0 +1,170 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background: radial-gradient(circle at top right, #eef5ff 0, #f7faff 35%, #f8fafc 100%);
+  color: #0f172a;
+}
+
+.container {
+  max-width: 760px;
+  margin: 34px auto;
+  background: rgba(255, 255, 255, 0.97);
+  padding: 28px;
+  border-radius: 20px;
+  border: 1px solid #dbe5f3;
+  box-shadow: 0 24px 50px rgba(15, 23, 42, 0.12);
+}
+
+h1 {
+  margin: 0 0 22px;
+  font-size: 28px;
+  letter-spacing: -0.02em;
+}
+
+.setting-card {
+  border-radius: 16px;
+  border: 1px solid #dbe5f3;
+  background: linear-gradient(180deg, #ffffff, #f8fbff);
+  padding: 16px;
+  margin-bottom: 16px;
+}
+
+.setting-card h2 {
+  margin: 0 0 14px;
+  font-size: 16px;
+  color: #1e293b;
+}
+
+label,
+fieldset {
+  display: block;
+  margin-bottom: 16px;
+  font-size: 14px;
+  font-weight: 700;
+  color: #1e293b;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 92px minmax(240px, 460px);
+  align-items: center;
+  column-gap: 14px;
+  margin-bottom: 14px;
+}
+
+.row-label {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+select,
+input[type="text"] {
+  margin-top: 0;
+  width: 100%;
+  max-width: 460px;
+  padding: 11px 12px;
+  border-radius: 12px;
+  border: 1px solid #cfdaea;
+  background: #fbfdff;
+  box-sizing: border-box;
+  font-size: 14px;
+  color: #0f172a;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+}
+
+select:focus,
+input[type="text"]:focus {
+  outline: none;
+  border-color: #60a5fa;
+  background: #fff;
+  box-shadow: 0 0 0 4px rgba(96, 165, 250, 0.2);
+}
+
+fieldset {
+  border: 1px solid #d7e1ef;
+  border-radius: 12px;
+  padding: 12px 12px 14px;
+  background: rgba(255, 255, 255, 0.78);
+}
+
+legend {
+  padding: 0 6px;
+  font-size: 13px;
+  color: #475569;
+}
+
+.shortcut-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px 14px;
+}
+
+.shortcut-check {
+  margin: 0;
+  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.shortcut-key {
+  margin: 0;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 600;
+}
+
+.shortcut-key input[type="text"] {
+  width: 92px;
+  min-width: 92px;
+}
+
+#saveBtn {
+  border: none;
+  border-radius: 12px;
+  padding: 12px 18px;
+  background: linear-gradient(180deg, #3b82f6, #2563eb);
+  color: #fff;
+  cursor: pointer;
+  font-weight: 700;
+  letter-spacing: 0.2px;
+  box-shadow: 0 10px 20px rgba(37, 99, 235, 0.28);
+  transition: background-color 0.2s ease, transform 0.15s ease, box-shadow 0.2s ease;
+}
+
+#saveBtn:hover {
+  background: linear-gradient(180deg, #2563eb, #1d4ed8);
+  transform: translateY(-1px);
+  box-shadow: 0 14px 24px rgba(37, 99, 235, 0.34);
+}
+
+#status {
+  min-height: 24px;
+  margin: 10px 0 0;
+  font-size: 13px;
+  font-weight: 600;
+  color: #0f766e;
+}
+
+@media (max-width: 720px) {
+  .container {
+    margin: 12px;
+    padding: 18px;
+  }
+
+  .setting-card {
+    padding: 12px;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+    row-gap: 6px;
+  }
+
+  h1 {
+    font-size: 22px;
+  }
+}

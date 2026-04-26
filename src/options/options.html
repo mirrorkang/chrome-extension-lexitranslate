@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LexiTranslate - 划词翻译助手 设置</title>
+    <link rel="stylesheet" href="./options.css" />
+  </head>
+  <body>
+    <main class="container">
+      <h1>LexiTranslate - 划词翻译助手 设置</h1>
+      <section class="setting-card">
+        <h2>翻译配置</h2>
+        <div class="form-row">
+          <label for="translationEngine" class="row-label">翻译引擎</label>
+          <select id="translationEngine"></select>
+        </div>
+        <div class="form-row">
+          <label for="targetLanguage" class="row-label">目标语言</label>
+          <select id="targetLanguage"></select>
+        </div>
+        <div class="form-row">
+          <label for="theme" class="row-label">主题</label>
+          <select id="theme">
+            <option value="light">亮色</option>
+            <option value="dark">暗黑</option>
+          </select>
+        </div>
+      </section>
+      <section class="setting-card">
+        <h2>快捷键</h2>
+        <fieldset>
+          <legend>页面内监听</legend>
+          <div class="shortcut-row">
+            <label class="shortcut-check"><input type="checkbox" id="ctrlKey" /> Ctrl</label>
+            <label class="shortcut-check"><input type="checkbox" id="shiftKey" /> Shift</label>
+            <label class="shortcut-check"><input type="checkbox" id="altKey" /> Alt</label>
+            <label class="shortcut-check"><input type="checkbox" id="metaKey" /> Command</label>
+            <label class="shortcut-key" for="shortcutKey">键值 <input type="text" id="shortcutKey" maxlength="1" /></label>
+          </div>
+        </fieldset>
+      </section>
+      <button id="saveBtn" type="button">保存设置</button>
+      <p id="status"></p>
+    </main>
+    <script src="../constants.js"></script>
+    <script src="../settings.js"></script>
+    <script src="./options.js"></script>
+  </body>
+</html>
